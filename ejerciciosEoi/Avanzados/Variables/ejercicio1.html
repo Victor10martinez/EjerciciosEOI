@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>variables 1 </title>
+
+
+</head>
+
+<body>
+
+<script>
+
+	function myFunction(){
+		var x = document.getElementById("nombre").value;
+		var y = document.getElementById("Edad").value;
+		var z = document.getElementById("Estadocivil").value;
+
+		var c = "El nombre de la persona es" + " " + x + ","+ " " + "tiene" + " " + y + " años" + " y su Estado Civil es" + " " + z;
+
+		document.getElementById("demo").innerHTML = c;
+	}
+
+</script>
+
+<label type="text">Nombre:</label>
+<input type="text" id="nombre"><br>
+<label type="text">Edad:</label>
+<input type="text" id="Edad"><br>
+<label type="text">Estado Civil:</label>
+<input type="text" id="Estadocivil"><br>
+
+<button type="button" onclick="myFunction()">Mostrar</button>
+
+<p id="demo"></p>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+  <head>
+<meta charset="utf-8">
+</head>
+  <body>
+    <form>
+      Rellenar con grados Fahrenheit
+      <input type="number" id="Fahrenheitvalue="">
+    </form>
+    <button onclick="myFunction()">
+Paso a Celsius
+    </button>
+    <p id="demo">
+
+    </p>
+    <script>
+      function myFunction() {
+      var x = 32 ;
+        var y = document.getElementById("Fahrenheit")
+        document.getElementById("demo").innerHTML = x - y;
+      }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+  <head>
+<meta charset="utf-8">
+</head>
+  <body>
+    <p >Saludame y te respondo</p>
+    <button onclick= "myFunction()">Le dices Hola</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var hora= new Date() .getHours();
+        var saludo;
+        if (hora < 13) {
+          saludo = "Buenas tardes";
+        }
+        else {
+          saludo = "Buenos días";
+        }
+      document.getElementById("demo").innerHTML= saludo;
+      }
+    </script>
+</body>
+</html>

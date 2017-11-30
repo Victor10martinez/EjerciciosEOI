@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+  <head>
+<meta charset="utf-8">
+</head>
+  <body>
+    <p id="demo"></p>
+    <button onclick="myFunction()">
+      Todo en mayusculas
+    </button>
+    <script>
+    function myFunction() {
+      var str = "Emacs es el mejor programa del mundo";
+      var res = str.toUpperCase();
+
+      document.getElementById("demo").innerHTML = res;
+    }
+    </script>
+</body>
+</html>

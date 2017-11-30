@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+  <head>
+<meta charset="utf-8">
+</head>
+  <body>
+
+             <p id = "demo">
+
+      </p>
+      <script>
+        var txt = "";
+        var Dias = { 0: "Lunes", 1: "Martes", 2: "Miercoles", 3: "Jueves", 4: "Viernes"
+                     , 5: "Sabado", 6: "Domingo"};
+        var x;
+        for (x in Dias) {
+          txt += Dias[x] + " ";
+        }
+
+
+        document.getElementById("demo").innerHTML = txt;
+
+    </script>
+</body>
+</html>

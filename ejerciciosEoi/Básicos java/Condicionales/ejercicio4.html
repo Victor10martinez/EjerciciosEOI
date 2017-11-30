@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+  <head>
+<meta charset="utf-8">
+</head>
+  <body>
+    <p>Pon tu nota</p>
+    <input id="numb">
+    <button type="button" onclick="myFunction()">Estas...</button>
+    <p id="demo"></p>
+    <script>
+    function myFunction() {
+      var text = "";
+      var x = document.getElementById("numb").value;
+      if (isNaN(x) | x < 5 )  {
+        text = "Suspendido";
+      }  else if ((x) | x == 5 ) {
+        text = "Aprobado";
+      } else if ((x) | x < 7 ) {
+        text = "Aprobado";
+      } else if ((x) | x < 9 ) {
+        text = "Notable";
+      } else if ((x) | x < 10 ) {
+        text = "Sobresaliente";
+      } else if ((x) | x == 10 ) {
+        text = "Matrícula de Honor";
+      } else {
+        text = "Nota no válida";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+
+    </script>
+</body>
+</html>

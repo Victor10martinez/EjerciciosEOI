@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>variables 2</title>
+
+
+</head>
+
+<body>
+<p> Introduzca su Nombre y Apellido para continuar.</p>
+<script>
+
+	function myFunction(){
+		var x = document.getElementById("nombre").value;
+		var y = document.getElementById("Apellido").value;
+
+		var c = "Su nombre y apellido son:" + " " + x  + " " + y;
+
+		document.getElementById("demo").innerHTML = c;
+
+
+
+		if ( x == "") {
+			alert("El campo Nombre debe ser rellenado");
+			return false;
+			}
+		if ( y == "") {
+			alert ("El campo apellido debe ser rellenado");
+			return false;
+			}
+	}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<label type="text">Nombre:</label>
+<input type="text" id="nombre"><br>
+<label type="text">Apellido:</label>
+<input type="text" id="Apellido"><br>
+
+<button type="button" onclick="myFunction()">Continuar</button>
+
+<p id="demo"></p>
+
+
+
+
+
+
+</body>
+</html>

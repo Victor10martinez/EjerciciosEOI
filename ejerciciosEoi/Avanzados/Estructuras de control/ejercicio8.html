@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Estructura de control 8</title>
+  </head>
+<body>
+
+<input id="myInput" type="text">
+<button onclick="valor()">Comprueba tu numero</button>
+<p id="demo"></p>
+
+<script>
+function valor() {
+  var text;
+  var valor = document.getElementById("myInput").value;
+
+  switch(valor) {
+    case "1":
+      text = "1";
+      break;
+    case "2":
+      text = "2";
+      break;
+    case "3":
+      text = "3";
+      break;
+	case "4":
+      text = "4";
+      break;
+	case "5":
+      text = "5";
+      break;
+    default:
+      text = "Error, introduce un valor entre 1 y 5";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
